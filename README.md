@@ -1,10 +1,68 @@
-# Getting Started with Create React App
+# Getting Started with React Player Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Project Overview
+This video player lets you easily manage and watch your favorite videos. You can browse through a list of pre-selected videos, change their order however you like, or even add and remove videos as you please. Playing and controlling the videos is simple with buttons like "next" and "previous," play/pause, and volume controls. Want to see the video in full screen? Just click a button! Or, adjust the playback speed from 1x to 2x to find your perfect pace. Plus, handy keyboard shortcuts give you quick access to full screen and play/pause functions.
+
+
+
+### Project Structure
+- public
+- src
+  - Componenets
+    - Controls 
+    - Duration
+    - PlayBackSpeed
+    - Playlist
+    - PopUP
+    - VideoPlayer
+    - Volume
+  - App.js
+  - index.css
+  - index.js
+- package.json
+- package-lock.json
+
+**Components Description**
+- Controls:
+  - Includes play, pause, go to previous video, and next video buttons.
+  - Displays duration component showing the current time and total length of the video.
+  - Provides playback speed component to adjust speed from 1x to 2x.
+  - Features volume component with mute functionality and volume bar.
+
+- Duration:
+  - Displays current time and total length of the video.
+  - Shows current running time in bar format for visual representation of playback progress.
+
+- Playback Speed:
+  - Allows selection of playback speed ranging from 1x to 2x.
+
+
+- Playlist:
+  - Enables addition and removal of videos from the playlist.
+  - Supports reordering of videos within the playlist.
+  - Includes a search bar for finding specific videos in the playlist.
+  - Implements re-order functionality for both original and filtered playlist videos.
+
+- Pop-up:
+  -  Contains certain videos that can be added to the playlist.
+
+- Video Player:
+  - Utilizes React Player library for smooth video playback.
+  - Embeds controls component within the video player component.
+
+- Volume:
+  - Offers functionality to mute the video.
+  - Allows adjustment of volume using a volume bar.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+It installs all the dependencies listed in the project
 
 ### `npm start`
 
@@ -14,57 +72,21 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Live Link of the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Live link of the application is
+[
+](https://main--playlist-video-player.netlify.app/)https://main--playlist-video-player.netlify.app/
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Light House Score
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="562" alt="Screenshot 2024-02-18 at 10 45 51 PM" src="https://github.com/SaiChandra9/video-player/assets/142481299/24c61d51-6cb2-4661-bae9-e0ff4194a251">
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
