@@ -55,6 +55,8 @@ This video player lets you easily manage and watch your favorite videos. You can
   - Offers functionality to mute the video.
   - Allows adjustment of volume using a volume bar.
 
+## Tech Stack Used
+  - ReactJS, StyledComponents, axios for fetching videos, MaterialUI
 
 ## Available Scripts
 
